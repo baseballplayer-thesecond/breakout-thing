@@ -192,7 +192,7 @@ while True:
                             Particle(brick.rect.centerx, brick.rect.centery, brick.color, 1, 4, 1, 4, 0.05))
                     bricks.remove(brick)
                     score += 10
-                    if random.random() < 0.6:
+                    if random.random() < 0.3:
                         power_up_type = random.choice(['grow', 'laser', 'glue', 'slow', 'death', 'life', 'multiball'])
                         power_up = PowerUp(brick.rect.centerx, brick.rect.centery, power_up_type)
                         power_ups.append(power_up)
@@ -224,7 +224,7 @@ while True:
                 bricks.remove(brick)
                 score += 10
                 brick_break_sound.play()
-                if random.random() < 0.6:
+                if random.random() < 0.3:
                     power_up_type = random.choice(['grow', 'laser', 'glue', 'slow', 'death', 'life', 'multiball'])
                     power_up = PowerUp(brick.rect.centerx, brick.rect.centery, power_up_type)
                     power_ups.append(power_up)
